@@ -77,7 +77,7 @@ class AssetContainer {
             $base = rtrim($assetUrl, '/');
 
             // Asset URL without index.
-            $basePath = str_contains($base, $i) ? str_replace('/'.$i, '', $base) : $base;
+            $basePath = Str::contains($base, $i) ? str_replace('/'.$i, '', $base) : $base;
         }
         else
         {

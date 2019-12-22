@@ -41,7 +41,7 @@ class ThemeDuplicateCommand extends Command {
 	 *
 	 * @param \Illuminate\Config\Repository     $config
 	 * @param \Illuminate\Filesystem\Filesystem $files
-	 * @return \Facuz\Theme\Commands\ThemeDuplicateCommand
+	 * @return \Sayghteight\Theme\Commands\ThemeDuplicateCommand
 	 */
 	public function __construct(Repository $config, File $files)
 	{

@@ -48,7 +48,7 @@ class WidgetGeneratorCommand extends Command {
      *
      * @param \Illuminate\Config\Repository     $config
      * @param \Illuminate\Filesystem\Filesystem $files
-     * @return \Facuz\Theme\Commands\WidgetGeneratorCommand
+     * @return \Sayghteight\Theme\Commands\WidgetGeneratorCommand
      */
     public function __construct(Repository $config, File $files)
     {

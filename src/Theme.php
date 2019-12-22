@@ -31,7 +31,7 @@ class Theme implements ThemeContract
     /**
      * Manifest.
      *
-     * @var \Facuz\Theme\Manifest
+     * @var \Sayghteight\Theme\Manifest
      */
     protected $manifest;
 
@@ -59,7 +59,7 @@ class Theme implements ThemeContract
     /**
      * Asset.
      *
-     * @var \Facuz\Assets
+     * @var \Sayghteight\Assets
      */
     protected $asset;
 
@@ -73,7 +73,7 @@ class Theme implements ThemeContract
     /**
      * Breadcrumb.
      *
-     * @var \Facuz\Breadcrumb
+     * @var \Sayghteight\Breadcrumb
      */
     protected $breadcrumb;
 
@@ -155,12 +155,12 @@ class Theme implements ThemeContract
      * @param  \Illuminate\Config\Repository $config
      * @param  \Illuminate\Events\Dispatcher $events
      * @param  \Illuminate\View\Factory $view |
-     * @param  \Facuz\Theme\asset $asset
+     * @param  \Sayghteight\Theme\asset $asset
      * @param  \Illuminate\Filesystem\Filesystem $files
-     * @param  \Facuz\Breadcrumb|\Facuz\Theme\Breadcrumb $breadcrumb
-     * @param  \Facuz\Theme\Manifest $manifest
+     * @param  \Sayghteight\Breadcrumb|\Sayghteight\Theme\Breadcrumb $breadcrumb
+     * @param  \Sayghteight\Theme\Manifest $manifest
      *
-     * @return \Facuz\Theme\Theme
+     * @return \Sayghteight\Theme\Theme
      */
     public function __construct(Repository $config,
                                 Dispatcher $events,
@@ -787,7 +787,7 @@ class Theme implements ThemeContract
      * @param  string $className
      * @param  array $attributes
      * @throws UnknownWidgetClassException
-     * @return Facuz\Theme\Widget
+     * @return Sayghteight\Theme\Widget
      */
     public function widget($className, $attributes = array())
     {
@@ -948,7 +948,7 @@ class Theme implements ThemeContract
     /**
      * Return asset instance.
      *
-     * @return \Facuz\Theme\Asset
+     * @return \Sayghteight\Theme\Asset
      */
     public function asset()
     {
@@ -958,7 +958,7 @@ class Theme implements ThemeContract
     /**
      * Return breadcrumb instance.
      *
-     * @return \Facuz\Theme\Breadcrumb
+     * @return \Sayghteight\Theme\Breadcrumb
      */
     public function breadcrumb()
     {

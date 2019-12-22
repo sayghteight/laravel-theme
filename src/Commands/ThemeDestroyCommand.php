@@ -41,7 +41,7 @@ class ThemeDestroyCommand extends Command {
      *
      * @param \Illuminate\Config\Repository     $config
      * @param \Illuminate\Filesystem\Filesystem $files
-     * @return \Facuz\Theme\Commands\ThemeDestroyCommand
+     * @return \Sayghteight\Theme\Commands\ThemeDestroyCommand
      */
 	public function __construct(Repository $config, File $files)
 	{

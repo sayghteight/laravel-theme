@@ -727,7 +727,7 @@ or
 
 ## Using theme global
 ~~~php
-use Facuz\Theme\Contracts\Theme;
+use Sayghteight\Theme\Contracts\Theme;
 use App\Http\Controllers\Controller;
 
 class BaseController extends Controller {

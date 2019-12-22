@@ -31,7 +31,7 @@ class Breadcrumb {
      *
      * @param  \Illuminate\Filesystem\Filesystem $files
      *
-     * @return \Facuz\Theme\Breadcrumb
+     * @return \Sayghteight\Theme\Breadcrumb
      */
     public function __construct(Filesystem $files)
     {

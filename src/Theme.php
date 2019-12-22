@@ -10,8 +10,8 @@ use Illuminate\Filesystem\Filesystem;
 use Illuminate\View\Compilers\BladeCompiler;
 use Illuminate\Database\Eloquent\Collection;
 use Symfony\Component\HttpFoundation\Cookie;
-use Facuz\Theme\Contracts\Theme as ThemeContract;
-use Facuz\Theme\Manifest;
+use Sayghteight\Theme\Contracts\Theme as ThemeContract;
+use Sayghteight\Theme\Manifest;
 use Illuminate\Support\Arr;
 
 class Theme implements ThemeContract

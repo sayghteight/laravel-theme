@@ -1,4 +1,4 @@
-<?php namespace Facuz\Theme;
+<?php namespace Sayghteight\Theme;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Routing\Router;

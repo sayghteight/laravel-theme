@@ -1,4 +1,4 @@
-<?php namespace Facuz\Theme\Commands;
+<?php namespace Sayghteight\Theme\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Config\Repository;

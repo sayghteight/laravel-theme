@@ -1,4 +1,4 @@
-<?php namespace Sayghteight\Theme;
+<?php namespace Facuz\Theme;
 
 use Closure;
 use Illuminate\Support\Str;
@@ -96,7 +96,7 @@ class AssetContainer {
             $root  = preg_replace('~'.$start.'~', $scheme, $root, 1);
 
             // Asset URL without index.
-            $basePath = str_contains($root, $i) ? str_replace('/'.$i, '', $root) : $root;
+            $basePath = Str::contains($root, $i) ? str_replace('/'.$i, '', $root) : $root;
         }
 
         return $basePath.'/'.$path;
@@ -216,13 +216,13 @@ class AssetContainer {
     public function add($name, $source = null, $dependencies = array(), $attributes = array())
     {
         if(!is_array($name)) {
-            if(!isset($source)) throw new \ErrorException("Missing argument 2 for Sayghteight\Theme\AssetContainer::add()", 1);
+            if(!isset($source)) throw new \ErrorException("Missing argument 2 for Facuz\Theme\AssetContainer::add()", 1);
             
             return $this->added($name, $source, $dependencies, $attributes);
         }
 
         foreach ($name as $array) {
-            if(count($array) < 2) throw new \ErrorException("Missing value 2 of the array for Sayghteight\Theme\AssetContainer::add()", 1);
+            if(count($array) < 2) throw new \ErrorException("Missing value 2 of the array for Facuz\Theme\AssetContainer::add()", 1);
             $container = $array[0];
             $source = $array[1]; 
             $dependencies = isset($array[2]) ? $array[2] : [];

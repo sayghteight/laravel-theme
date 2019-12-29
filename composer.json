@@ -1,8 +1,8 @@
 {
-    "name": "sayghteight/laravel-theme",
+    "name": "facuz/laravel-themes",
     "description": "Theme will help you organize your themes inside Laravel projects easily and maintain its related assets, layouts and partials for the theme in single directory. (Based on teepluss/theme)",
     "keywords": ["laravel", "theme", "layout", "asset", "widget"],
-    "homepage": "https://github.com/sayghteight/laravel-theme",
+    "homepage": "https://github.com/facuz/laravel-theme",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,7 +15,7 @@
             "email": "info@indis.com.ar"
         },
         {
-            "name": "Perioner",
+            "name": "Sayghteight",
             "email": "sayghteight@wow-cms.com"
         }
     ],
@@ -28,7 +28,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Sayghteight\\Theme\\": "src/"
+            "Facuz\\Theme\\": "src/"
         },
         "classmap": [
             "src/Exceptions.php"
@@ -40,10 +40,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Sayghteight\\Theme\\ThemeServiceProvider"
+                "Facuz\\Theme\\ThemeServiceProvider"
             ],
             "aliases": {
-                "Theme": "Saygheight\\Theme\\Facades\\Theme"
+                "Theme": "Facuz\\Theme\\Facades\\Theme"
             }
         }
     },

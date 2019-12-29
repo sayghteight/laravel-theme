@@ -1,4 +1,4 @@
-<?php namespace Sayghteight\Theme;
+<?php namespace Facuz\Theme;
 
 use Closure;
 use ReflectionClass;
@@ -10,8 +10,8 @@ use Illuminate\Filesystem\Filesystem;
 use Illuminate\View\Compilers\BladeCompiler;
 use Illuminate\Database\Eloquent\Collection;
 use Symfony\Component\HttpFoundation\Cookie;
-use Sayghteight\Theme\Contracts\Theme as ThemeContract;
-use Sayghteight\Theme\Manifest;
+use Facuz\Theme\Contracts\Theme as ThemeContract;
+use Facuz\Theme\Manifest;
 use Illuminate\Support\Arr;
 
 class Theme implements ThemeContract
@@ -31,7 +31,7 @@ class Theme implements ThemeContract
     /**
      * Manifest.
      *
-     * @var \Sayghteight\Theme\Manifest
+     * @var \Facuz\Theme\Manifest
      */
     protected $manifest;
 
@@ -59,7 +59,7 @@ class Theme implements ThemeContract
     /**
      * Asset.
      *
-     * @var \Sayghteight\Assets
+     * @var \Facuz\Assets
      */
     protected $asset;
 
@@ -73,7 +73,7 @@ class Theme implements ThemeContract
     /**
      * Breadcrumb.
      *
-     * @var \Sayghteight\Breadcrumb
+     * @var \Facuz\Breadcrumb
      */
     protected $breadcrumb;
 
@@ -155,12 +155,12 @@ class Theme implements ThemeContract
      * @param  \Illuminate\Config\Repository $config
      * @param  \Illuminate\Events\Dispatcher $events
      * @param  \Illuminate\View\Factory $view |
-     * @param  \Sayghteight\Theme\asset $asset
+     * @param  \Facuz\Theme\asset $asset
      * @param  \Illuminate\Filesystem\Filesystem $files
-     * @param  \Sayghteight\Breadcrumb|\Sayghteight\Theme\Breadcrumb $breadcrumb
-     * @param  \Sayghteight\Theme\Manifest $manifest
+     * @param  \Facuz\Breadcrumb|\Facuz\Theme\Breadcrumb $breadcrumb
+     * @param  \Facuz\Theme\Manifest $manifest
      *
-     * @return \Sayghteight\Theme\Theme
+     * @return \Facuz\Theme\Theme
      */
     public function __construct(Repository $config,
                                 Dispatcher $events,
@@ -677,7 +677,7 @@ class Theme implements ThemeContract
 
         // Buffer processes to save request.
         return Arr::get($this->bindings, $name, function() use (&$_events, &$_bindings, $name) {
-            $response = current($_events->dispatch($name));
+            $response = current($_events->fire($name));
             array_set($_bindings, $name, $response);
             return $response;
         });
@@ -787,7 +787,7 @@ class Theme implements ThemeContract
      * @param  string $className
      * @param  array $attributes
      * @throws UnknownWidgetClassException
-     * @return Sayghteight\Theme\Widget
+     * @return Facuz\Theme\Widget
      */
     public function widget($className, $attributes = array())
     {
@@ -948,7 +948,7 @@ class Theme implements ThemeContract
     /**
      * Return asset instance.
      *
-     * @return \Sayghteight\Theme\Asset
+     * @return \Facuz\Theme\Asset
      */
     public function asset()
     {
@@ -958,7 +958,7 @@ class Theme implements ThemeContract
     /**
      * Return breadcrumb instance.
      *
-     * @return \Sayghteight\Theme\Breadcrumb
+     * @return \Facuz\Theme\Breadcrumb
      */
     public function breadcrumb()
     {

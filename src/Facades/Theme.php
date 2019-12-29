@@ -1,4 +1,4 @@
-<?php namespace Sayghteight\Theme\Facades;
+<?php namespace Facuz\Theme\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

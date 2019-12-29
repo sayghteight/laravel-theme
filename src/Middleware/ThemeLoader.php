@@ -1,4 +1,4 @@
-<?php namespace Sayghteight\Theme\Middleware;
+<?php namespace Facuz\Theme\Middleware;
 
 use Closure, Theme;
 

@@ -1,4 +1,4 @@
-<?php namespace Sayghteight\Theme;
+<?php namespace Facuz\Theme;
 
 use Illuminate\Support\Facades\URL;
 use Illuminate\Filesystem\Filesystem;
@@ -31,7 +31,7 @@ class Breadcrumb {
      *
      * @param  \Illuminate\Filesystem\Filesystem $files
      *
-     * @return \Sayghteight\Theme\Breadcrumb
+     * @return \Facuz\Theme\Breadcrumb
      */
     public function __construct(Filesystem $files)
     {

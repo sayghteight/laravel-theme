@@ -40,7 +40,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Facuz\\Theme\\ThemeServiceProvider"
+                "Sayghteight\\Theme\\ThemeServiceProvider"
             ],
             "aliases": {
                 "Theme": "Facuz\\Theme\\Facades\\Theme"

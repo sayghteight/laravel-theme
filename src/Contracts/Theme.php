@@ -1,4 +1,4 @@
-<?php namespace Facuz\Theme\Contracts;
+<?php namespace Sayghteight\Theme\Contracts;
 
 interface Theme {
 

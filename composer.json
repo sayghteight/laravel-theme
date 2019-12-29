@@ -28,7 +28,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Facuz\\Theme\\": "src/"
+            "Sayghteight\\Theme\\": "src/"
         },
         "classmap": [
             "src/Exceptions.php"
@@ -43,7 +43,7 @@
                 "Sayghteight\\Theme\\ThemeServiceProvider"
             ],
             "aliases": {
-                "Theme": "Facuz\\Theme\\Facades\\Theme"
+                "Theme": "Sayghteight\\Theme\\Facades\\Theme"
             }
         }
     },

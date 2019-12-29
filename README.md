@@ -2,7 +2,7 @@
 
 Laravel-Theme is a theme management for Laravel 5+, it is the easiest way to organize your skins, layouts and assets.
 
-This package is based on [teepluss\theme](https://github.com/teepluss/laravel-theme/)
+This package is based on [teepluss\theme](https://github.com/teepluss/laravel-theme/) and [FaCuZ/laravel-theme](https://github.com/FaCuZ/laravel-theme/)
 
 >##### Differences with teepluss version:
 >- Compatible with laravel 5.4+.
@@ -40,7 +40,7 @@ Theme has many features to help you get started with Laravel
 To get the latest version of laravel-themes simply require it in your `composer.json` file.
 
 ~~~json
-"facuz/laravel-themes": "^3.1"
+"sayghteight/laravel-themes": "^3.1"
 ~~~
 
 You'll then need to run `composer install` to download it and have the autoloader updated.
@@ -50,7 +50,7 @@ Once Theme is installed you need to register the service provider with the appli
 ~~~php
 'providers' => [
 	...
-	Facuz\Theme\ThemeServiceProvider::class,
+	Sayghteight\Theme\ThemeServiceProvider::class,
 
 ]
 ~~~
@@ -60,14 +60,14 @@ Theme also ships with a facade which provides the static syntax for creating col
 ~~~php
 'aliases' => [
 	...
-	'Theme' => Facuz\Theme\Facades\Theme::class,
+	'Theme' => Sayghteight\Theme\Facades\Theme::class,
 
 ]
 ~~~
 Publish config using artisan CLI.
 
 ~~~
-php artisan vendor:publish --provider="Facuz\Theme\ThemeServiceProvider"
+php artisan vendor:publish --provider="Sayghteight\Theme\ThemeServiceProvider"
 ~~~
 
 It's recommended to add to the `.env` file the theme that we are going to use
@@ -727,7 +727,7 @@ or
 
 ## Using theme global
 ~~~php
-use Facuz\Theme\Contracts\Theme;
+use Sayghteight\Theme\Contracts\Theme;
 use App\Http\Controllers\Controller;
 
 class BaseController extends Controller {
@@ -735,7 +735,7 @@ class BaseController extends Controller {
 	/**
 	 * Theme instance.
 	 *
-	 * @var \Facuz\Theme\Theme
+	 * @var \Sayghteight\Theme\Theme
 	 */
 	protected $theme;
 
@@ -775,7 +775,7 @@ Only register it in `app\Http\Kernel.php`
 ~~~php
 protected $routeMiddleware = [
     ...
-    'setTheme' => \Facuz\Theme\Middleware\ThemeLoader::class,
+    'setTheme' => \Sayghteight\Theme\Middleware\ThemeLoader::class,
 ];
 ~~~
 

@@ -6,7 +6,7 @@ if (!function_exists('theme')){
 	 *
 	 * @param  string  $themeName
 	 * @param  string  $layoutName
-	 * @return \Facuz\Theme\Theme
+	 * @return \Sayghteight\Theme\Theme
 	 */
 	function theme($themeName = null, $layoutName = null){
 		$theme = app('theme');
